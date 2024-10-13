@@ -1,0 +1,7 @@
+guia para las maquetas del proyecto integrador.
+
+1. la maqueta principal ya esta lista.
+2. la maqueta del acerca de.
+3. la maqueta de productos/servicios.
+4. la maqueta de agendamiento.
+5. la maqueta de contactenos.
