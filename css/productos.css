@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 100%;
+}
+
+body{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.header{
+    border: .125rem solid blue;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.banner{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;  
+}
+.logo{
+    flex: 40%;
+}
+.header .barra{
+    min-width: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    display: flex;
+    gap: 2%;
+}
+.barra .nav{
+    border: .1875rem solid white;
+    flex-basis: 60%;
+    gap: 2%;
+}
+.barra .buscador{
+    border: .1875rem solid white;
+    background-color: rgba(5, 5, 5, 0.4);
+    flex-basis: 40%;
+}
+main{
+    border: .125rem solid blue;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main .parte1, .parte2{
+    margin-left: 2%;
+    margin-right: 2%;
+    flex-basis: 48%;
+    border: .1875rem solid blue;
+    display: flex;
+    
+}
+main .parte1 .item1{
+    margin: 1%;
+    flex-basis: 40%;
+    border: .125rem solid blue;
+}
+main .parte1 .item2{
+    margin: 1%;
+    flex-basis: 58%;
+    border: .125rem solid blue;
+}
+main .parte2 .item1{
+    margin: 1%;
+    flex-basis: 58%;
+    border: .125rem solid blue;
+}
+main .parte2 .item2{
+    margin: 1%;
+    flex-basis: 40%;
+    border: .125rem solid blue;
+}
+footer{
+    height: 10vh;
+    border: .125rem solid blue;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+footer .item1, .item2, .item3{
+    margin: .5%;
+    border: .1875rem solid blue;
+    flex-basis: 32%;
+    
+}
