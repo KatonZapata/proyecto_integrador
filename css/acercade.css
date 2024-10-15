@@ -8,6 +8,7 @@ html{
     width: 100%;
     height: 100%;
 }
+
 img{
     width: 100%;
 }
@@ -27,13 +28,17 @@ body{
     position: relative;
 }
 .banner{
+    min-height: 40%;
     position: absolute;
     top: 0%;
     left: 0%;
     display: flex;  
 }
 .logo{
-    flex: 40%;
+    min-width: 80%;
+}
+.logo img{
+    width: 100%;
 }
 .header .barra{
     min-width: 100%;
@@ -65,40 +70,51 @@ body{
 }
 main{
     border: .125rem solid blue;
-    height: 70%;
+    height: 80%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: column; 
 }
 
 main .parte1, .parte2{
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 1%;
     flex-basis: 48%;
     border: .1875rem solid blue;
     display: flex;
-    
+    text-align: justify; 
+}
+main .parte1 img{
+    width: 100%;
 }
 main .parte1 .item1{
     margin: 1%;
-    flex-basis: 40%;
+    flex-basis: 20%;
     border: .125rem solid blue;
+    text-align: center;
 }
 
 main .parte1 .item2{
     margin: 1%;
-    flex-basis: 58%;
+    flex-basis: 78%;
     border: .125rem solid blue;
+    justify-content: center;
 }
 main .parte2 .item1{
     margin: 1%;
-    flex-basis: 58%;
+    flex-basis: 78%;
     border: .125rem solid blue;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
+main .parte2 img{
+    width: 100%;
+}
+
 main .parte2 .item2{
     margin: 1%;
-    flex-basis: 40%;
+    flex-basis: 20%;
     border: .125rem solid blue;
+    text-align: center;
 }
 footer{
     background-color: rgba(0, 0, 0, 0.4);
@@ -112,7 +128,6 @@ footer .item1, .item2, .item3{
     margin: .5%;
     border: .1875rem solid blue;
     flex-basis: 32%;
-    justify-content: center;
     align-items: center;
     align-content: center;
 }
