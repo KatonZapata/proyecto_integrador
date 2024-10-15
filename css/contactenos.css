@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 12px solid blac;
+}
+header{ 
+    background-image: url(../imagenes/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    border: .125rem solid blue;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header .banner{
+    min-width: 100%;
+    min-height: 80%;
+    display: flex;
+}
+
+.banner img{
+    width: 100%;
+}
+.banner .logo{
+    flex: 50%;
+}   
+
+header .navegacion{
+    min-width: 100%;
+    min-height: 20%;
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    display: flex;
+    color: beige;
+    gap: 2%;
+}
+.navegacion .caja3{
+    min-width: 58%;
+    border: .3125rem solid white;
+}
+.navegacion .caja4{
+min-width: 40%;
+border: .3125rem solid white;
+}
+
+.logo img{
+    width: 100%;
+}
+
+main{
+    border: .125rem solid rgb(101, 101, 111);
+    min-height: 50vh;
+}
+
+main .contenedor{
+    min-height: 90%;
+    border: .125rem solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}
+
+.contenedor .contenedor1{
+    min-height: 20%;
+    margin: 1%;
+    border: .125rem solid blue;
+
+}
+.contenedor .contenedor2{
+    min-height: 78vh;
+    margin: 1%;
+    border: .125rem solid blue;
+
+}
+
+section{
+    border: 30%;
+}
+
+footer{
+    justify-content: space-evenly;
+    border: .125rem solid blue;
+    min-height: 15vh;
+    display: flex;
+}
+
+footer .caja1, .caja2, .caja3{
+    margin: 1%;
+ flex-basis: 32%;
+ border: .125rem solid blue;
+}
