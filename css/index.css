@@ -13,7 +13,7 @@ body{
     margin-right: 3%;
     border: 12px solid blac;
 }
-header{
+header{ 
     background-image: url(../imagenes/banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover ;
@@ -21,10 +21,12 @@ header{
     min-height: 40vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
-.banner{
-    min-height: 100%;
+header .banner{
+    min-width: 100%;
+    min-height: 80%;
     display: flex;
 }
 
@@ -33,13 +35,25 @@ header{
 }
 .banner .logo{
     flex: 50%;
-    min-height: 40%;
-}
+}   
 
-.banner .navegacion{
+header .navegacion{
+    min-width: 100%;
+    min-height: 20%;
     position: absolute;
-    bottom: 8%;
-    left: 3%;
+    top: 80%;
+    left: 0%;
+    display: flex;
+    color: beige;
+    gap: 2%;
+}
+.navegacion .caja3{
+    min-width: 58%;
+    border: .3125rem solid white;
+}
+.navegacion .caja4{
+min-width: 40%;
+border: .3125rem solid white;
 }
 
 .logo img{
@@ -47,23 +61,69 @@ header{
 }
 
 main{
-    border: .125rem solid blue;
+    border: .125rem solid rgb(101, 101, 111);
     min-height: 50vh;
     display: flex;
     flex-direction: column;
 }
+
+main{
+    border: .125rem solid rgb(37, 156, 81);
+    min-height: 60vh;
+    
+}
+
+.main{
+    min-height: 90vh;
+    border: .125rem solid blue;
+    display: flex;
+    flex-direction: column;
+}
+.main .clase1, .clase2{
+    margin: 1%;
+    flex: 48%;
+    border: .1875rem solid rgb(8, 8, 62);
+    display: flex;
+}
+
+
+.main .clase1 .paso1{
+    margin: 1%;
+    flex: 40%;
+    border: .125rem solid rgb(182, 203, 48);
+}
+.main .clase1 .paso2{
+    margin: 1%;
+    flex: 58%;
+    border: .125rem solid rgb(182, 203, 48);
+}
+
+.main .clase2 .paso3{
+    margin: 1%;
+    flex: 58%;
+    border: .125rem solid rgb(182, 203, 48);
+}
+.main .clase2 .paso4{
+    margin: 1%;
+    flex: 40%;
+    border: .125rem solid rgb(182, 203, 48);
+}
+
 
 section{
     border: 30%;
 }
 
 footer{
+    justify-content: space-evenly;
     border: .125rem solid blue;
     min-height: 15vh;
     display: flex;
-    
 }
 
-.footer .copyright{
- 
+footer .caja1, .caja2, .caja3{
+    margin: 1%;
+ flex-basis: 32%;
+ border: .125rem solid blue;
 }
+
