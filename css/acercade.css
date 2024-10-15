@@ -4,6 +4,7 @@
     margin: 0;
 }
 html{
+    background-color:whitesmoke;
     width: 100%;
     height: 100%;
 }
@@ -12,6 +13,9 @@ img{
 }
 
 body{
+    background-image: url(../imagenes/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-left: 3%;
     margin-right: 3%;
 }
@@ -42,16 +46,26 @@ body{
 .barra .nav{
     border: .1875rem solid white;
     flex-basis: 60%;
-    gap: 2%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.nav a{
+    margin-right: 2%;
+    color: white;
 }
 .barra .buscador{
     border: .1875rem solid white;
     background-color: rgba(5, 5, 5, 0.4);
     flex-basis: 40%;
 }
+.buscador p{
+    color: white;
+    text-align: center;
+}
 main{
     border: .125rem solid blue;
-    height: 70vh;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -70,6 +84,7 @@ main .parte1 .item1{
     flex-basis: 40%;
     border: .125rem solid blue;
 }
+
 main .parte1 .item2{
     margin: 1%;
     flex-basis: 58%;
@@ -86,15 +101,31 @@ main .parte2 .item2{
     border: .125rem solid blue;
 }
 footer{
-    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 20%;
     border: .125rem solid blue;
     display: flex;
     justify-content: space-evenly;
-
+    color: beige;
 }
 footer .item1, .item2, .item3{
     margin: .5%;
     border: .1875rem solid blue;
     flex-basis: 32%;
-    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.item3{
+    text-align: center;
+}
+footer .item3 a{
+    margin-left: 5%;
+    }
+
+footer .item3 img{
+    width: 10%;
+}
+footer p{
+    text-align: center;
 }
