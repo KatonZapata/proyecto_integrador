@@ -21,7 +21,6 @@ body{
     margin-right: 3%;
 }
 .header{
-    border: .125rem solid blue;
     height: 40%;
     display: flex;
     flex-direction: column;
@@ -117,7 +116,6 @@ body{
     font-weight: bold;
 }
 main{
-    border: .125rem solid blue;
     height: 80%;
     display: flex;
     flex-direction: column; 
@@ -126,55 +124,68 @@ main{
 main .parte1, .parte2{
     margin: 1%;
     flex-basis: 48%;
-    border: .1875rem solid blue;
     display: flex;
-    text-align: justify; 
+    text-align: justify;
 }
 main .parte1 img{
     width: 100%;
+    border-radius: .5rem;
+    box-shadow: 3px 4px 3px 1px;
 }
 main .parte1 .item1{
     margin: 1%;
     flex-basis: 20%;
-    border: .125rem solid blue;
     text-align: center;
 }
 
 main .parte1 .item2{
     margin: 1%;
     flex-basis: 78%;
-    border: .125rem solid blue;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: .1875rem .25rem .1875rem .125rem;
+}
+.parte1 .item2 p{
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
 }
 main .parte2 .item1{
     margin: 1%;
     flex-basis: 78%;
-    border: .125rem solid blue;
-    justify-content: center;
     align-items: center;
     align-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: .1875rem .25rem .1875rem .125rem;
+
+}
+.parte2 .item1 p{
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
 }
 main .parte2 img{
     width: 100%;
+    border-radius: .5rem;
+    box-shadow: 3px 4px 3px 1px;
 }
 
 main .parte2 .item2{
     margin: 1%;
     flex-basis: 20%;
-    border: .125rem solid blue;
     text-align: center;
 }
 footer{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 20%;
-    border: .125rem solid blue;
     display: flex;
     justify-content: space-evenly;
     color: beige;
 }
 footer .item1, .item2, .item3{
     margin: .5%;
-    border: .1875rem solid blue;
     flex-basis: 32%;
     align-items: center;
     align-content: center;
