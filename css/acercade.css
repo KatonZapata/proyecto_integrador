@@ -21,6 +21,8 @@ body{
     display: flex;
     height: 40vh;
     width: 100%;
+    flex-direction: column;
+    gap: 50%;
     }
 .header .logo{
     width: 30%;
@@ -33,12 +35,14 @@ body{
     width: 30%;
     height: 30%;
     gap: 10%;
+   
 }
 .nav .menu{
     display: flex;
     height: 30%;
 }
 .menu .checkbtn {
+    color: white;
     margin-left: 5px;
     margin-right: 10rem;
    float: right;
@@ -58,18 +62,17 @@ body{
     text-decoration: none;
     position: relative;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
-    color: black;
+    color:  white;
     padding: 0 1rem;
     z-index: 1;
 }
 .lista_nav span{
     position: absolute;
-    top: 0;
     left: 0;
-    width: 100px;
-    height: 100%;
+    width: 6.25rem;
+    height: 1.875rem;
     background: linear-gradient(45deg,blue,#a6a6cf);
     border-radius: .5rem;
     transition: .5s;
@@ -78,20 +81,22 @@ body{
     left: 0;
 }
 .lista_nav :nth-child(2):hover ~span{
-    left: 80px;
+    left: 5.9375rem;
 }
 .lista_nav :nth-child(3):hover ~span{
-    left: 190px;
+    left: 14.0625rem;
 }
 .lista_nav :nth-child(4):hover ~span{
-    left: 300px;
+    left: 21.875rem;
 }
 .lista_nav :nth-child(5):hover ~span{
-    left: 415px;
+    left: 30rem;
 }
 
 .buscador{
     display: flex;
+    width: ;
+    height: 1.25rem;
 }
 
 
