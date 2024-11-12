@@ -13,60 +13,60 @@ body{
     background-image: url(../imagenes/fondo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 3%;
-    margin-right: 3%;
 }
-header{
-    width: 100%;
-    height:40vh;
+.header{
     background-image: url(../imagenes/banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    align-items:baseline;
-    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    }
+.header .logo{
+    width: 30%;
+    height: 30%;
 }
-header .nav{
+.header .nav{
+    margin: 0 1rem;
+    padding: 5px;
     display: flex;
-    gap: 40vh;
+    width: 30%;
+    height: 30%;
+    gap: 10%;
 }
-.nav .logo{
+.nav .menu{
+    display: flex;
+    height: 30%;
+}
+.menu .checkbtn {
+    margin-left: 5px;
+    margin-right: 10rem;
+   float: right;
+   font-size: 18px;
+}
 
-    max-width: 25rem;
-}
-/* .checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 5rem;
-    margin-right: 2.5rem;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-} */
-.lista_nav{
-    width: 40vw;
-    height: 6vh;
-    position: relative;
-    top: 20vh;
+.menu .lista_nav{
     display: flex;
     list-style-type: none;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 .lista_nav a{
+    text-decoration: none;
     position: relative;
     display: inline-block;
     font-size: 1rem;
     font-weight: 500;
-    color: #fff;
-    padding: 0 1.5rem;
+    color: black;
+    padding: 0 1rem;
     z-index: 1;
 }
 .lista_nav span{
     position: absolute;
-    top: .625rem;
+    top: 0;
     left: 0;
     width: 100px;
     height: 100%;
@@ -74,7 +74,6 @@ header .nav{
     border-radius: .5rem;
     transition: .5s;
 }
-
 .lista_nav :nth-child(1):hover ~ span{
     left: 0;
 }
@@ -90,42 +89,16 @@ header .nav{
 .lista_nav :nth-child(5):hover ~span{
     left: 415px;
 }
+
 .buscador{
-    height: 38%;
-    position: relative;
-    top: 23vh;
-    gap: 1rem;
-    display: inline-flex;
+    display: flex;
 }
 
-.input_control{
-    min-width: 30vw;
-    min-height: 5.3vh;
-    border: none;
-    border-radius: .5rem;
-    background-color: rgba(128, 128, 128,0.8);
-    box-shadow: .125rem .1875rem ;
-    font-style: italic;
-    text-align: left;
-    font-weight: bold;
-    
-}
-.label_buscador{
 
-    justify-content: space-between;
-    text-align: right;
-    font-size: 1.5625rem;
-}
-
-.lista_nav li a{
-    text-decoration: none;
-    color: white;
-    justify-content: space-between;
-    padding: 1rem;
-}
-main{
+/* main{
     height: 80vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column; 
 }
 
@@ -184,15 +157,16 @@ main .parte2 .item2{
     margin: 1%;
     flex-basis: 20%;
     text-align: center;
-}
-footer{
+} */
+/* .footer{
     background-color: rgba(0, 0, 0, 0.7);
     height: 20%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     color: beige;
 }
-footer .item1, .item2, .item3{
+.footer .item1, .item2, .item3{
     margin: .5%;
     height: 32%;
     width: 32%;
@@ -202,13 +176,19 @@ footer .item1, .item2, .item3{
 .item3{
     text-align: center;
 }
-footer .item3 a{
+.footer .item3 a{
     margin-left: 5%;
     }
 
-footer .item3 img{
+.footer .item3 img{
     width: 10%;
 }
-footer p{
+.footer p{
     text-align: center;
 }
+@media (min-whidth: 450px){
+    .footer .item1, .item2, .item3{
+        width: 100%;
+        height: 100%;
+    }
+} */
