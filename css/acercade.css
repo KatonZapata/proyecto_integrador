@@ -121,8 +121,8 @@ li a.active, li a:hover{
     font-style: italic;
     justify-content: center;
     align-items: center;
-}
-.footer{
+}/* fin del main */
+.footer{/* inicio del footer */
     margin-top: 1.875rem;
     width: 100%;
     height: 20vh;
@@ -141,8 +141,8 @@ li a.active, li a:hover{
 .item3 img{
     width: 1.875rem;
     margin-left: 2.5rem;
-}
-
+}/* fin del footer */
+/* inicio mediaQuery */
 @media(max-width: 960px){
 
     .enlace{
@@ -203,4 +203,4 @@ li a.active, li a:hover{
         margin: auto;
         padding: auto;
     }
-}
+}/* final mediaQuery */
