@@ -1,162 +1,113 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
-html{
-    height: 100%;
+
+header .nav{
+    background: aqua;
     width: 100%;
-}
-
-body{
-    margin-left: 3%;
-    margin-right: 3%;
-    border: 12px solid blac;
-}
-header{ 
-    background-image: url(../imagenes/banner.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover ;
-    min-height: 40vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-header .banner{
-    min-width: 100%;
-    min-height: 80%;
-    display: flex;
-}
-
-.banner img{
-    width: 100%;
-}
-.banner .logo{
-    flex: 50%;
-}   
-
-header .navegacion{
-    min-width: 100%;
-    min-height: 20%;
-    position: absolute;
-    top: 80%;
-    left: 0%;
-    display: flex;
-    color: white;
-    gap: 2%;
-}
-.navegacion .caja3{
-    min-width: 58%;
-    
+    height: 5rem;
 }
 
 nav{
-    position: relative;
-    width: 524px;
-    height: 50px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav a{
-    position: relative;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #fff;
-    text-decoration: none;
-    padding: 0 23px;
-    z-index: 1;
-}
-
-nav span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 95px;
-    height: 100%;
-    background: linear-gradient(45deg,  rgb(51, 96, 233), #e4c1c1);
-    border-radius: 8px;
-    transition: .5s;
-}
-
-nav a:nth-child(1):hover~span{
-    left: 0;
-}
-
-nav a:nth-child(2):hover~span{
-    left: 95px;
-}
-
-nav a:nth-child(3):hover~span{
-    left: 226px;
-    width: 130px;
-}
-nav a:nth-child(4):hover~span{
-    left: 380px;
-    width: 100px;
-}
-
-nav a:nth-child(5):hover~span{
-    left: 490px;
-    width: 110px;
-}
-
-nav a:nth-child(6):hover~span{
-    left: 1000px;
-    width: 110px;
-}
-
-.navegacion .caja4{
-min-width: 40%;
-
-}
-
-.logo img{
+    background-color: #2fcdcd;
+    height: 80px;
     width: 100%;
 }
 
-main{
-    border: .125rem solid rgb(101, 101, 111);
-    min-height: 50vh;
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
 }
 
-main .contenedor{
-    min-height: 90%;
-    border: .125rem solid black;
-    display: flex;
-    flex-direction: column;
-    margin: 1%;
+.logo{
+    height: 40px;
 }
 
-.contenedor .contenedor1{
-    min-height: 20%;
-    margin: 1%;
-    border: .125rem solid blue;
-
+nav ul{
+    float: right;
+    margin-right: 20px;
 }
-.contenedor .contenedor2{
-    min-height: 78vh;
-    margin: 1%;
-    border: .125rem solid blue;
 
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #0f0429;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover{
+    background: #000090;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
 }
 
 section{
-    border: 30%;
+    background: url(../imagenes/publicidad2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
 }
 
-footer{
-    justify-content: space-evenly;
-    border: .125rem solid blue;
-    min-height: 15vh;
-    display: flex;
+@media (max-width: 952px){
+.enlace{
+    padding-left: 20px;
+}
+nav ul li a{
+font-size: 16px;
+}
 }
 
-footer .caja1, .caja2, .caja3{
-    margin: 1%;
- flex-basis: 31%;
+@media (max-width: 858px){
+.checkbtn{
+    display: block;
+}
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #7497ba;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 20px;
+}
+li a.hover, li a.active{
+    background: none;
+    color: red;
+}
+#check:checked ~ ul{
+    left: 0;
+}
 }
