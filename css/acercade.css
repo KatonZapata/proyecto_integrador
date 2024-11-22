@@ -90,7 +90,8 @@ li a.active, li a:hover{
     display: inline-flex;
 }
 .caja1 .img1 img{
-    margin: 3.125rem 1.25rem;
+    margin-top: 3.125rem;
+    
     width: 15rem;
     border-radius: .5rem;
     box-shadow: .3125rem .4375rem .1875rem .125rem;
