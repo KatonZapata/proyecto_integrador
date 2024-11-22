@@ -185,12 +185,12 @@ height: 100vh;
         transition: all 0.5s;
     }
     
-    .nav .nav_list li{
+    .nav1 .nav_list li{
         display: block;
         margin: 3.125rem 0;
         line-height: 1.875rem;
     }
-    .nav .nav_list li a{
+    .nav1 .nav_list li a{
         font-size: 1.25rem;
         color: white;
     }
@@ -202,6 +202,10 @@ height: 100vh;
     }
     .container{
         height: 120%;
+    }
+    .carrusel{
+        display: block;
+        z-index: -1;
     }
     .caja1, .caja2{
         flex-direction: column;
