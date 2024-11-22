@@ -92,6 +92,7 @@ li a.active, li a:hover{
     display: inline-flex;
 }
 .carrusel{
+    
     width: 60vh;
     margin: auto;
 }
